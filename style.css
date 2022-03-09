@@ -328,6 +328,7 @@ cursor:pointer;
 
     min-width: 300px;
     border-radius: 7px;
+    overflow: hidden;
     
     }
 
@@ -337,7 +338,7 @@ cursor:pointer;
         height: 450px;
         padding: 20px;
         color: white;
-        background: linear-gradient( black 0%,transparent 40%);
+        background: linear-gradient( transparent 0%,rgba(0, 0, 0, 0.527) 95%);
          visibility: hidden;
         overflow: hidden;
          opacity: 0;

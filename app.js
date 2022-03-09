@@ -24,28 +24,32 @@ btn.addEventListener('click',function(){
     
 })
 
-// var jsdom = require("jsdom").jsdom;
-// global.$ = require('jquery/dist/jquery')(jsdom().createWindow());
+
         
-    $('.link-image').click(function(){
+    // $('.link-image').click(function(){
 
-        $('.link-image').removeClass('active')
-        $(this).addClass('active')
-    })
+    //     $('.link-image').removeClass('active')
+    //     $(this).addClass('active')
+    // })
 
-// for (let i = 0; i < link.length; i++) {
-//     const element = link[i];
-//     console.log(element)
+
+    let image = document.querySelectorAll('.link-image')
+
+        image.forEach(element => {
+
+            element.addEventListener('click', function(){
+                let imageactive= document.querySelector('.link-image.active')
+                imageactive.classList.remove('active')
+                this.classList.add('active')
+
+            
+        });
     
-//       element.addEventListener('click',function()
-//     {
+    // for (let i = 0; i < image.length; i++) {
+    //     const element = image[i];
 
-//     autherLinks[i].classList.toggle('visibel')
-// })
     
-// }
 
-// link.addEventListener('click',function(){
-
-//     autherLinks.classList.toggle('visibel')
-// })
+     })
+        
+    
